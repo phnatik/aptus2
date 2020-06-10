@@ -1,0 +1,395 @@
+::selection {
+  color: #17c7b3;
+  background: transparent !important;
+}
+
+.no-pad {
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.scroll-sidebar-bg {
+  left: -95px !important;
+}
+
+.flyin-header-show {
+  top: 0px !important;
+}
+
+.hero-bottom-left-move {
+  padding-left: 16px !important;
+}
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.flyin-header {
+  height: 65px;
+  position: fixed;
+  top: -91px;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  background: white;
+  transition: all 0.75s;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.17);
+}
+.flyin-header .brand-logo {
+  background: #17c7b3;
+  display: block;
+  padding: 11px 0px 0px 7px;
+  width: 71px;
+  height: 65px;
+  float: left;
+}
+.flyin-header .brand-logo .brand-logo-img {
+  padding: 6px 10px 7px 16px;
+  z-index: 1001;
+  transition: all 0.25s;
+  width: 50px;
+}
+.flyin-header .brand-logo .brand-menu {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.25s;
+  position: absolute;
+  top: 24px;
+  opacity: 0;
+}
+.flyin-header .brand-logo .brand-menu p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 11px 5px;
+}
+.flyin-header .brand-logo .brand-menu .line {
+  float: right;
+  width: 25px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  margin-bottom: 5px;
+}
+.flyin-header .brand-logo .brand-menu .line.last {
+  width: 18px;
+}
+.flyin-header .text-logo img {
+  padding-top: 23px;
+  padding-left: 20px;
+  max-width: 160px;
+}
+
+.hero-container .main-sidebar {
+  width: 93px;
+  height: calc(100vh);
+  background: #17c7b3;
+  margin-right: 15px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: all 0.25s;
+  border-color: rgba(255, 255, 255, 0.2);
+  z-index: 1002;
+}
+.hero-container .main-sidebar .brand-logo {
+  background: #17c7b3;
+  display: block;
+  padding: 20px 15px 15px 15px;
+  width: 100%;
+  height: 90px;
+}
+.hero-container .main-sidebar .brand-logo .brand-logo-img {
+  padding: 6px 10px 7px 16px;
+  z-index: 1001;
+  transition: all 0.25s;
+}
+.hero-container .main-sidebar .brand-logo .brand-menu {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.25s;
+  position: absolute;
+  top: 24px;
+  opacity: 0;
+}
+.hero-container .main-sidebar .brand-logo .brand-menu p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 11px 5px;
+}
+.hero-container .main-sidebar .brand-logo .brand-menu .line {
+  float: right;
+  width: 25px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  margin-bottom: 5px;
+}
+.hero-container .main-sidebar .brand-logo .brand-menu .line.last {
+  width: 18px;
+}
+.hero-container .main-sidebar .social-btm {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+  font-family: "Montserrat", serif;
+}
+.hero-container .main-sidebar .social-btm a {
+  color: #fff;
+  font-size: 20px;
+}
+.hero-container .menu {
+  background: #212529;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.25s;
+}
+.hero-container .menu .main-sidebar {
+  background: #17c7b3 !important;
+}
+.hero-container .menu.menu-closed {
+  width: 0;
+}
+.hero-container .menu.menu-open {
+  width: 100%;
+  padding-left: 120px;
+  padding-top: 34px;
+}
+.hero-container .menu .menu-content {
+  display: none;
+  transition: all 0.25s;
+}
+.hero-container .menu .menu-content a.close-menu {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Montserrat", sans-seif;
+  font-weight: 300;
+  position: absolute;
+  top: 22px;
+  right: 58px;
+}
+.hero-container .menu .menu-content a.close-menu:hover {
+  text-decoration: none;
+}
+.hero-container .menu .show-menu-content {
+  display: block;
+}
+.hero-container .hero {
+  height: 100vh;
+  width: 100%;
+  float: left;
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+}
+.hero-container .hero .hero-bg {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(-45deg, transparent, #393f42, #393f42);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease 1;
+  background-position: 100% 50%;
+  z-index: 80;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero-container .hero .hero-header {
+  position: relative;
+  z-index: 100;
+}
+.hero-container .hero .hero-header .text-logo {
+  padding: 34px 15px 15px 122px;
+}
+.hero-container .hero .hero-header .right-header {
+  padding-top: 30px;
+  padding-right: 42px;
+  color: #fff;
+}
+.hero-container .hero .hero-header .menu-btn {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.hero-container .hero .hero-header .menu-btn .line {
+  float: right;
+  width: 25px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  margin-bottom: 5px;
+}
+.hero-container .hero .hero-header .menu-btn .line.last {
+  width: 18px;
+}
+.hero-container .hero .hero-header .header-phone {
+  padding-right: 50px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: -10px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero-container .hero .hero-content {
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  padding: 132px 46px 0 110px;
+}
+.hero-container .hero .hero-content img {
+  width: 100%;
+}
+.hero-container .hero .hero-content .title {
+  font-weight: 900;
+  font-size: 77px;
+}
+.hero-container .hero .hero-content .sub-title {
+  font-size: 22px;
+  line-height: 42px;
+}
+.hero-container .hero .hero-bottom {
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+}
+.hero-container .hero .hero-bottom .hero-bottom-left {
+  border-top: 1px solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.25s;
+  padding-left: 117px;
+}
+.hero-container .hero .hero-bottom .hero-bottom-right .circle-down {
+  margin-top: -30px;
+  cursor: pointer;
+}
+.hero-container .hero .video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -999;
+}
+.hero-container .hero .video-wrapper video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  min-width: 100%;
+  z-index: -100;
+  background-size: cover;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.main-content {
+  padding-top: 60px;
+  position: relative;
+  background: #fff;
+  z-index: 100;
+}
+.main-content .init-text {
+  font-family: "Montserrat", serif;
+  display: block;
+  margin: 0 auto;
+}
+.main-content .init-text h1 {
+  padding-bottom: 20px;
+  font-weight: 400;
+  color: #282c34;
+  font-size: 30px;
+  line-height: 47px;
+}
+.main-content .init-text p {
+  font-size: 16px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.main-content .home-services .item {
+  background: #dedede;
+  width: 100%;
+  height: 350px !important;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+.main-content .home-services .item .item-content {
+  position: relative;
+  z-index: 22;
+  padding-top: 60px;
+  font-family: "Montserrat", sans-serif;
+}
+.main-content .home-services .item .item-overlay {
+  background-image: linear-gradient(-45deg, rgba(57, 67, 63, 0.9), rgba(57, 63, 66, 0.4) 110%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 21;
+}
+.main-content .home-services .item .title {
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.main-content .home-services .item .sub-title {
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+}
+.main-content .home-services .item.digital-media {
+  width: 100%;
+  height: 100%;
+  background: url("../images/phone.jpg") no-repeat;
+  background-size: cover;
+}
+.main-content .home-services .item.creative {
+  width: 100%;
+  height: 100%;
+  background: url("../images/creative.jpg") no-repeat;
+  background-size: cover;
+  background-position: 90%;
+}
+.main-content .home-services .item.web {
+  width: 100%;
+  height: 100%;
+  background: url("../images/process.jpg") no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,27 @@
+::selection {
+    color: $brand;
+    background: transparent !important;
+}
+
+.no-pad {
+    padding: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.scroll-sidebar-bg {
+    // background: #fff !important;
+    // border-color: rgba(0, 0, 0, 0.2) !important;
+    // color: $primGrey !important;
+    left: -95px !important;
+}
+
+.flyin-header-show {
+    top: 0px !important;
+}
+
+.hero-bottom-left-move {
+    padding-left: 16px !important;
+}

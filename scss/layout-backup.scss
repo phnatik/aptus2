@@ -1,0 +1,173 @@
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background-color: #fff;
+  margin-left: 105px;
+}
+
+.hero-container {
+  .main-sidebar {
+    width: 93px;
+    height: calc(100vh - 20px);
+    background: $brand;
+    margin-right: 15px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    transition: all 0.25s;
+
+    .brand-logo {
+      display: block;
+      padding: 20px 15px 15px 15px;
+    }
+
+    .social-btm {
+      position: absolute;
+      left: 40px;
+      bottom: 20px;
+
+      a {
+        color: #fff !important;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .menu {
+    background: $brand;
+    position: fixed;
+    margin-left: -12px;
+    height: calc(100vh - 20px);
+    /* width: 100%; */
+    z-index: 1000;
+    width: calc(100% - 113px);
+    transition: all 0.25s;
+
+    &.menu-closed {
+      width: 0;
+    }
+
+    &.menu-open {
+      width: calc(100% - 113px);
+    }
+
+    .menu-content {
+      display: none;
+      transition: all 0.25s;
+
+      a.close-menu {
+        color: #fff;
+        font-size: 50px;
+        font-family: 'Montserrat', sans-seif;
+        font-weight: 300;
+        position: absolute;
+        top: 22px;
+        right: 58px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .show-menu-content {
+      display: block;
+    }
+  }
+
+  .hero {
+    height: calc(100vh - 20px);
+    // width: calc(100% - 110px);
+    width: 100%;
+    background: url('../images/hero-img.jpg') no-repeat;
+    background-size: cover;
+    float: left;
+    position: relative;
+
+    .hero-header {
+      .text-logo {
+        padding: 45px 15px 15px 45px;
+      }
+
+      .right-header {
+        padding-top: 30px;
+        padding-right: 42px;
+        color: #fff;
+      }
+
+      .menu-btn {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+
+        .line {
+          float: right;
+          width: 25px;
+          height: 2px;
+          display: block;
+          background: #fff;
+          margin-bottom: 5px;
+
+          &.last {
+            width: 18px;
+          }
+        }
+      }
+
+      .header-phone {
+        padding-right: 50px;
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: -10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+
+    .hero-content {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 220px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .hero-bottom {
+      width: 100%;
+      position: absolute;
+      height: 60px;
+      bottom: 0;
+      left: 0;
+      color: #fff;
+
+      .hero-bottom-left {
+        border-top: 1px solid;
+        border-color: rgba(255, 255, 255, 0.2);
+        padding: 16px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .hero-bottom-right {
+        img {
+          margin-top: -30px;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  padding-top: 60px;
+
+  h1 {
+    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 20px;
+  }
+}
