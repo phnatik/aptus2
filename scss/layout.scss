@@ -34,7 +34,7 @@ body {
 
 
         .brand-logo-img {
-            padding: 6px 10px 7px 16px;
+            padding: 0px 10px 7px 17px;
             z-index: 1001;
             transition: all .25s;
             width: 50px;
@@ -87,7 +87,7 @@ body {
         width: 93px;
         height: calc(100vh);
         // background: $primGrey;
-        background: $brand;
+        background: $primGrey;
         margin-right: 15px;
         position: fixed;
         top: 0px;
@@ -107,9 +107,10 @@ body {
 
 
             .brand-logo-img {
-                padding: 6px 10px 7px 16px;
+                padding: 0px 10px 7px 17px;
                 z-index: 1001;
                 transition: all .25s;
+                height: 55px;
             }
 
             .brand-menu {
@@ -216,7 +217,8 @@ body {
             height: 100vh;
             width: 100%;
 
-            background: linear-gradient(-45deg, transparent, #393f42, #393f42);
+            // background: linear-gradient(-45deg, transparent, #393f42, #393f42);
+            background: linear-gradient(-45deg, transparent, #282c34, #282c34);
             background-size: 400% 400%;
             animation: gradientBG 15s ease 1;
             background-position: 100% 50%;
@@ -232,7 +234,11 @@ body {
 
             .text-logo {
                 // padding: 45px 15px 15px 45px;
-                padding: 34px 15px 15px 122px;
+                padding: 20px 15px 15px 122px;
+
+                img{
+                    height: 56px;
+                }
             }
 
             .right-header {
@@ -280,7 +286,7 @@ body {
             z-index: 100;
 
             // padding-top: 132px;
-            padding: 132px 46px 0 110px;
+            padding: 164px 46px 0 110px;
 
             img {
                 width: 100%;
@@ -288,8 +294,8 @@ body {
 
             .title {
                 font-weight: 900;
-                // font-size: 90px;
-                font-size: 77px;
+                font-size: 90px;
+                // font-size: 77px;
             }
 
             .sub-title {

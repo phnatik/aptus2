@@ -55,7 +55,7 @@ body {
   float: left;
 }
 .flyin-header .brand-logo .brand-logo-img {
-  padding: 6px 10px 7px 16px;
+  padding: 0px 10px 7px 17px;
   z-index: 1001;
   transition: all 0.25s;
   width: 50px;
@@ -94,7 +94,7 @@ body {
 .hero-container .main-sidebar {
   width: 93px;
   height: calc(100vh);
-  background: #17c7b3;
+  background: #282c34;
   margin-right: 15px;
   position: fixed;
   top: 0px;
@@ -111,9 +111,10 @@ body {
   height: 90px;
 }
 .hero-container .main-sidebar .brand-logo .brand-logo-img {
-  padding: 6px 10px 7px 16px;
+  padding: 0px 10px 7px 17px;
   z-index: 1001;
   transition: all 0.25s;
+  height: 55px;
 }
 .hero-container .main-sidebar .brand-logo .brand-menu {
   width: 25px;
@@ -200,7 +201,7 @@ body {
 .hero-container .hero .hero-bg {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(-45deg, transparent, #393f42, #393f42);
+  background: linear-gradient(-45deg, transparent, #282c34, #282c34);
   background-size: 400% 400%;
   animation: gradientBG 15s ease 1;
   background-position: 100% 50%;
@@ -214,7 +215,10 @@ body {
   z-index: 100;
 }
 .hero-container .hero .hero-header .text-logo {
-  padding: 34px 15px 15px 122px;
+  padding: 20px 15px 15px 122px;
+}
+.hero-container .hero .hero-header .text-logo img {
+  height: 56px;
 }
 .hero-container .hero .hero-header .right-header {
   padding-top: 30px;
@@ -252,14 +256,14 @@ body {
   text-align: center;
   position: relative;
   z-index: 100;
-  padding: 132px 46px 0 110px;
+  padding: 164px 46px 0 110px;
 }
 .hero-container .hero .hero-content img {
   width: 100%;
 }
 .hero-container .hero .hero-content .title {
   font-weight: 900;
-  font-size: 77px;
+  font-size: 90px;
 }
 .hero-container .hero .hero-content .sub-title {
   font-size: 22px;
